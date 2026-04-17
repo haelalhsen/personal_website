@@ -1,0 +1,30 @@
+[
+  {
+    "id": "testimonial-1",
+    "quote": "One of the most thorough Flutter architects I've worked with. The codebase they left behind was clean enough that the junior team could maintain it without hand-holding.",
+    "author": "Omar Alhalabi",
+    "role": "Founder, Dabbrly App Startup",
+    "rating": 5
+  },
+  {
+    "id": "testimonial-2",
+    "quote": "Delivered a pixel-perfect design system that cut our designer-developer iteration time in half. Every component was documented and accessible out of the box.",
+    "author": "Kind Ali",
+    "role": "Head of Mobile, Syriatel",
+    "rating": 5
+  },
+  {
+    "id": "testimonial-3",
+    "quote": "Set up our entire CI/CD pipeline in a week — Fastlane, code signing, automated testing, Firebase distribution. We went from zero automation to fully automated releases.",
+    "author": "Mahmoud Alakkad",
+    "role": "General Tech Lead",
+    "rating": 5
+  },
+  {
+    "id": "testimonial-4",
+    "quote": "The performance work alone was worth the engagement — cut our app startup time by 40% and eliminated the jank on our main feed screen completely.",
+    "author": "Ahmad Kamal",
+    "role": "CTO, Clefincode",
+    "rating": 5
+  }
+]

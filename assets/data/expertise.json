@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mobile-architecture",
+    "title": "Mobile Architecture",
+    "icon": "architecture",
+    "description": "Designing scalable, maintainable mobile applications using Clean Architecture, MVVM, MVI, and Repository patterns across Flutter, native iOS (Swift/SwiftUI), and Android (Kotlin/Jetpack Compose). Deep experience building modular, feature-toggled, and white-label multi-tenant platforms serving multiple enterprise clients from a single codebase.",
+    "tags": ["clean arch", "MVVM", "MVI", "modular", "white-label", "feature-toggle", "repository pattern"]
+  },
+  {
+    "id": "native-ios-android",
+    "title": "Native iOS & Android",
+    "icon": "platform",
+    "description": "Full native mobile development across both platforms: Swift, SwiftUI, UIKit, ARKit, and Combine on iOS; Kotlin, Java, Jetpack Compose, and Dagger on Android. Delivered production apps to 10M+ users at Syriatel, with deep expertise in security hardening, test automation (XCTest, Espresso), and AR experiences (ARKit/ARCore).",
+    "tags": ["Swift", "SwiftUI", "Kotlin", "Jetpack Compose", "ARKit", "ARCore", "UIKit", "Dagger"]
+  },
+  {
+    "id": "cross-platform-flutter",
+    "title": "Cross-Platform with Flutter",
+    "icon": "flutter",
+    "description": "Expert Flutter delivery across e-commerce, healthcare, fintech, and enterprise ERP domains. Deep expertise in BLoC, Clean Architecture, offline-first patterns, and AI-augmented development with GitHub Copilot and Claude Code. Delivered white-label platforms used by multiple enterprise tenants.",
+    "tags": ["Flutter", "Dart", "BLoC", "Riverpod", "offline-first", "AI-augmented", "white-label", "multi-tenant"]
+  },
+  {
+    "id": "iot-connected-devices",
+    "title": "IoT & Connected Devices",
+    "icon": "iot",
+    "description": "Bridging mobile with hardware through MQTT, BLE, NFC, and gRPC. Building custom native SDKs and Method Channel bridges to integrate smart locks, IP cameras, LPR systems, and precision measurement instruments — with direct experience on a production IoT parking management platform.",
+    "tags": ["MQTT", "BLE", "NFC", "method channels", "gRPC", "SDK development", "LPR", "smart locks"]
+  },
+  {
+    "id": "security-compliance",
+    "title": "Security & Compliance",
+    "icon": "security",
+    "description": "Implementing enterprise-grade mobile security across fintech, healthcare, and ERP platforms: OAuth2/JWT, RBAC, PCI-DSS-compliant encrypted storage, biometric auth, end-to-end encryption, iOS Keychain, Android Keystore, and ProGuard hardening. Remediated vulnerabilities identified in external penetration tests at Syriatel.",
+    "tags": ["OAuth2", "JWT", "PCI-DSS", "RBAC", "biometric", "E2E encryption", "iOS Keychain", "Android Keystore", "ProGuard"]
+  },
+  {
+    "id": "team-leadership-cicd",
+    "title": "Team Leadership & CI/CD",
+    "icon": "leadership",
+    "description": "Building mobile departments from scratch — defining stacks, designing sprint structures, hiring, onboarding, and establishing code review culture. Setting up automated release pipelines with Codemagic and GitHub Actions, reducing release cycle times by up to 25% and accelerating multi-team delivery at scale.",
+    "tags": ["Codemagic", "GitHub Actions", "Agile/Scrum", "BOT model", "mentoring", "code review", "hiring", "team building"]
+  }
+]

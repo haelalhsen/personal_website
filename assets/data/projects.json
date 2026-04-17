@@ -1,0 +1,44 @@
+[
+  {
+    "id": "syriatel-mobile-platform",
+    "title": "Syriatel Mobile Platform",
+    "subtitle": "Telecom & fintech app for Syria's largest carrier",
+    "description": "Developed and maintained native iOS (Swift) and Android (Java) apps for Syriatel, architecting secure payment flows and performance-optimised experiences under high-volume concurrent load. Remediated security vulnerabilities from external penetration tests and built XCTest/Espresso automation suites that cut manual testing time by 30%.",
+    "tags": ["swift", "java", "android", "ios", "fintech", "ios keychain", "android keystore", "xctest", "espresso"],
+    "metrics": [
+      { "label": "Active Users", "value": "10M+" },
+      { "label": "Platform", "value": "iOS + Android" },
+      { "label": "Testing Reduction", "value": "30%" }
+    ],
+    "mockupColor": "#54C5F8",
+    "url": "https://www.syriatel.sy/products/akrab-elik"
+  },
+  {
+    "id": "iot-parking-platform",
+    "title": "IoT Smart Parking Platform",
+    "subtitle": "MQTT-connected parking management for Omnitec Group",
+    "description": "Led mobile R&D for an IoT-connected parking platform integrating smart locks, IP cameras, LPR systems, and MQTT-enabled sensors. Consolidated 5+ fragmented app variants into a single modular, feature-toggled Flutter codebase — cutting duplication by 60% and reducing new feature delivery time by 40%.",
+    "tags": ["flutter", "mqtt", "iot", "yolo", "ml", "modular architecture", "feature-toggle", "lpr"],
+    "metrics": [
+      { "label": "Code Duplication Cut", "value": "60%" },
+      { "label": "Feature Dev Faster", "value": "40%" },
+      { "label": "App Variants Merged", "value": "5+" }
+    ],
+    "mockupColor": "#FF6E40",
+    "url": "https://apps.apple.com/ae/app/cass-parking/id1673358863"
+  },
+  {
+    "id": "white-label-erp",
+    "title": "White-Label ERP Platform",
+    "subtitle": "Multi-tenant enterprise ERP for ClefinCode",
+    "description": "Provided senior technical leadership for a white-label multi-tenant ERP serving multiple enterprise clients from one codebase. Delivered OAuth2/JWT auth, RBAC, PCI-DSS-compliant encrypted storage, and offline-first sync with conflict resolution — all within a modular architecture enabling rapid tenant onboarding without duplication.",
+    "tags": ["flutter", "white-label", "multi-tenant", "erp", "oauth2", "jwt", "rbac", "pci-dss", "offline-first"],
+    "metrics": [
+      { "label": "Modules Delivered", "value": "5" },
+      { "label": "Compliance", "value": "PCI-DSS" },
+      { "label": "Architecture", "value": "Multi-Tenant" }
+    ],
+    "mockupColor": "#0288D1",
+    "url": "https://apps.apple.com/us/app/erpnext-mobile/id6479046579"
+  }
+]

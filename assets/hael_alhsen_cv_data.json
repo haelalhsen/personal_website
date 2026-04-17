@@ -1,0 +1,329 @@
+{
+  "personal": {
+    "name": "Hael Alhsen",
+    "title": "Senior Mobile Engineer",
+    "tagline": "iOS & Android Leadership | Enterprise Scale Apps | Agile Delivery",
+    "location": "Dubai, UAE",
+    "email": "hael.alhsen@gmail.com",
+    "linkedin": "linkedin.com/in/hael-alhsen-7a6648179",
+    "summary": "Senior Mobile Engineer with 9+ years of hands-on experience architecting and delivering native iOS, Android and Flutter applications at scale, serving 10M+ users across enterprise, fintech, and IoT-connected platforms. Known for translating complex technical requirements into clean, maintainable systems through deep command of modern architecture patterns including MVVM, MVI, and Repository — paired with a strong foundation in Clean Architecture principles. Brings rare end-to-end ownership across the mobile stack: from crafting custom native SDKs and Method Channel bridges for embedded hardware, to MQTT-driven IoT device integration, to navigating PCI-DSS compliance and enterprise-grade release pipelines across multi-backend environments. Beyond engineering, a natural team builder — having established mobile departments from the ground up, led agile scrum teams, and mentored engineers at all levels. Equally comfortable in the weeds of a technical POC and in the room driving R&D strategy.",
+    "years_of_experience": "9+",
+    "users_served": "10M+"
+  },
+
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": "Omnitec Group",
+      "role": "R&D Senior Mobile Engineer",
+      "location": "Dubai, UAE",
+      "period": "Oct 2024 – Present",
+      "domain": "IoT / Parking Management",
+      "highlights": [
+        "Leading mobile R&D strategy for IoT-connected parking management platform integrating smart locks, IP cameras, LPR systems, and MQTT-enabled sensors, driving delivery across mobile, backend, and ML engineering teams.",
+        "Set technical standards, architectural direction, and engineering best practices across the mobile engineering function; coordinating with product, ML, and backend to align delivery against R&D objectives.",
+        "Led POC development for YOLO-based ML licence plate recognition and indoor mapping integration; accelerated R&D cycles by 30–40% using AI-augmented development practices.",
+        "Consolidated 5+ fragmented app variants into a single modular, feature-toggled platform, cutting code duplication by 60% and reducing new feature development time by 40%."
+      ],
+      "metrics": {
+        "r_and_d_acceleration": "30–40%",
+        "code_duplication_reduction": "60%",
+        "feature_dev_time_reduction": "40%",
+        "app_variants_consolidated": "5+"
+      },
+      "tags": ["IoT", "MQTT", "Flutter", "YOLO", "ML", "modular architecture", "feature-toggle", "R&D", "LPR", "team leadership"]
+    },
+    {
+      "id": "exp-2",
+      "company": "Accumed",
+      "role": "Mobile Applications Team Lead",
+      "location": "Damascus, Syria",
+      "period": "Jul 2023 – May 2024",
+      "domain": "Healthcare Technology",
+      "highlights": [
+        "Established Accumed's mobile engineering department from zero: defined technology stack (Flutter, Clean Architecture, BLoC), designed sprint structure, created code review standards, and implemented CI/CD pipelines (Codemagic) — building the full BOT model for a sustainable mobile team.",
+        "Led end-to-end hiring: conducted technical interviews for iOS, Android native, and Flutter developers; onboarded and mentored all new team members on architecture patterns, testing frameworks, and engineering standards.",
+        "Owned architectural decision-making and cross-functional alignment: worked directly with product managers, designers, and backend engineers to define API contracts, data models, and system integration strategy for a healthcare appointment platform."
+      ],
+      "tags": ["Flutter", "BLoC", "clean architecture", "Codemagic", "CI/CD", "team building", "hiring", "healthcare", "BOT model", "agile"]
+    },
+    {
+      "id": "exp-3",
+      "company": "ClefinCode",
+      "role": "Senior Flutter Engineer – White-Label ERP Platform",
+      "location": "Dubai, UAE",
+      "period": "Jul 2022 – Jul 2023",
+      "domain": "Enterprise ERP / SaaS",
+      "highlights": [
+        "Provided senior technical leadership for a white-label multi-tenant ERP platform serving multiple enterprise clients from a single codebase; responsible for architectural consistency, feature-toggle governance, and cross-team alignment across 5 delivered modules.",
+        "Implemented enterprise security standards across the platform: OAuth2/JWT authentication, RBAC access control, PCI-DSS-compliant encrypted storage, and offline-first sync with conflict resolution.",
+        "Designed modular architecture separating shared core logic from client customisations — enabling rapid deployment of new tenants without codebase duplication, reducing time-to-ship for each new client configuration."
+      ],
+      "metrics": {
+        "modules_delivered": 5
+      },
+      "tags": ["Flutter", "white-label", "multi-tenant", "ERP", "OAuth2", "JWT", "RBAC", "PCI-DSS", "offline-first", "modular architecture"]
+    },
+    {
+      "id": "exp-4",
+      "company": "UNDP Syria – Acceleration Lab",
+      "role": "Mobile Technical Officer (Contract)",
+      "location": "Syria",
+      "period": "Aug 2021 – Jan 2023",
+      "domain": "Humanitarian / AR / Legal Tech",
+      "highlights": [
+        "Led technical delivery of two experimental mobile platforms for UNDP humanitarian programme: an Augmented Reality heritage preservation app (ARCore/Android + ARKit/iOS) and a biometrically-secured legal consultation platform with end-to-end encrypted communication.",
+        "Developed reusable native Swift and Kotlin SDKs packaged for cross-project deployment; introduced Method Channel architecture enabling modular native capability reuse across future projects."
+      ],
+      "tags": ["ARCore", "ARKit", "Swift", "Kotlin", "biometric auth", "E2E encryption", "method channels", "SDK development", "UNDP", "humanitarian"]
+    },
+    {
+      "id": "exp-5",
+      "company": "Dream Web Development W.L.L",
+      "role": "Flutter Team Leader",
+      "location": "Qatar",
+      "period": "Sep 2020 – Mar 2022",
+      "domain": "e-Commerce / Healthcare / Logistics",
+      "highlights": [
+        "Led cross-functional mobile team to deliver 5+ production applications for international clients across e-commerce, healthcare, and logistics — from requirements and architecture through App Store and Google Play deployment.",
+        "Established CI/CD pipeline using GitHub Actions, reducing release cycle time by 25% through automated build, test, and deployment; drove agile delivery practices, retrospectives, and continuous improvement across the team.",
+        "Implemented Clean Architecture across all projects, reducing crash rates by ~15%; led client-facing technical discussions and translating business requirements into scalable mobile architecture decisions."
+      ],
+      "metrics": {
+        "apps_delivered": "5+",
+        "release_cycle_reduction": "25%",
+        "crash_rate_reduction": "~15%"
+      },
+      "tags": ["Flutter", "clean architecture", "GitHub Actions", "CI/CD", "agile", "App Store", "Google Play", "team leadership", "e-commerce", "healthcare", "logistics"]
+    },
+    {
+      "id": "exp-6",
+      "company": "Syriatel Mobile Telecom",
+      "role": "Mobile Application Developer",
+      "location": "Damascus, Syria",
+      "period": "Jan 2018 – Aug 2020",
+      "domain": "Telecommunications / Fintech",
+      "highlights": [
+        "Developed and maintained native iOS (Swift) and Android (Java) applications for Syria's largest telecommunications provider — architecting secure payment flows and performance-optimised experiences for a 10M+ user base under high-volume, concurrent load.",
+        "Remediated security vulnerabilities identified in external penetration tests; implemented iOS Keychain, Android Keystore, ProGuard obfuscation, and mobile security hardening aligned with industry best practices.",
+        "Built test automation framework using XCTest (iOS) and Espresso (Android), reducing manual testing time by 30%; collaborated with backend team on Java API development and Oracle database integration."
+      ],
+      "metrics": {
+        "user_base": "10M+",
+        "manual_testing_reduction": "30%"
+      },
+      "tags": ["Swift", "Java", "Android", "iOS", "iOS Keychain", "Android Keystore", "ProGuard", "XCTest", "Espresso", "fintech", "security", "Oracle"]
+    },
+    {
+      "id": "exp-7",
+      "company": "National Standards and Calibration Laboratory",
+      "role": "Software Engineer – Instrumentation & Automation",
+      "location": "Syria",
+      "period": "Jan 2017 – Dec 2017",
+      "domain": "Instrumentation / Automation",
+      "highlights": [
+        "Engineered automation software interfacing directly with precision measurement instruments via hardware communication protocols — building foundational hardware-software integration expertise that underpins current IoT and connected-device engineering work."
+      ],
+      "tags": ["automation", "hardware protocols", "instrumentation", "IoT foundations"]
+    }
+  ],
+
+  "skills": {
+    "categories": [
+      {
+        "id": "engineering-leadership",
+        "title": "Engineering Leadership",
+        "skills": [
+          { "name": "Agile / Scrum Team Management", "level": "expert" },
+          { "name": "BOT Model Execution", "level": "expert" },
+          { "name": "Technical Decision-Making", "level": "expert" },
+          { "name": "Cross-Functional Team Leadership", "level": "expert" },
+          { "name": "Stakeholder Management", "level": "expert" },
+          { "name": "Hiring & Mentoring", "level": "expert" }
+        ]
+      },
+      {
+        "id": "native-ios",
+        "title": "Native iOS",
+        "skills": [
+          { "name": "Swift", "level": "expert" },
+          { "name": "SwiftUI", "level": "expert" },
+          { "name": "UIKit", "level": "expert" },
+          { "name": "MVVM (iOS)", "level": "expert" },
+          { "name": "Combine", "level": "proficient" },
+          { "name": "ARKit", "level": "proficient" },
+          { "name": "XCTest", "level": "expert" },
+          { "name": "App Store Connect", "level": "expert" },
+          { "name": "TestFlight", "level": "expert" },
+          { "name": "iOS Keychain", "level": "expert" }
+        ]
+      },
+      {
+        "id": "native-android",
+        "title": "Native Android",
+        "skills": [
+          { "name": "Kotlin", "level": "expert" },
+          { "name": "Java", "level": "proficient" },
+          { "name": "Jetpack Compose", "level": "expert" },
+          { "name": "MVVM (Android)", "level": "expert" },
+          { "name": "Dagger (DI)", "level": "proficient" },
+          { "name": "Espresso", "level": "expert" },
+          { "name": "Google Play Console", "level": "expert" },
+          { "name": "Android Keystore", "level": "expert" },
+          { "name": "ProGuard", "level": "proficient" }
+        ]
+      },
+      {
+        "id": "cross-platform",
+        "title": "Cross-Platform",
+        "skills": [
+          { "name": "Flutter", "level": "expert" },
+          { "name": "Dart", "level": "expert" },
+          { "name": "BLoC", "level": "expert" },
+          { "name": "Riverpod", "level": "proficient" },
+          { "name": "GitHub Copilot", "level": "proficient" },
+          { "name": "Claude Code (AI-augmented dev)", "level": "proficient" }
+        ]
+      },
+      {
+        "id": "iot-connected-devices",
+        "title": "IoT & Connected Devices",
+        "skills": [
+          { "name": "MQTT", "level": "expert" },
+          { "name": "BLE", "level": "proficient" },
+          { "name": "NFC", "level": "proficient" },
+          { "name": "Smart Device Integration", "level": "expert" },
+          { "name": "Method Channel SDK Development", "level": "expert" },
+          { "name": "Hardware Bridging", "level": "expert" },
+          { "name": "gRPC", "level": "proficient" },
+          { "name": "REST", "level": "expert" }
+        ]
+      },
+      {
+        "id": "architecture",
+        "title": "Architecture & Engineering Practices",
+        "skills": [
+          { "name": "Clean Architecture", "level": "expert" },
+          { "name": "MVVM", "level": "expert" },
+          { "name": "MVI", "level": "expert" },
+          { "name": "Repository Pattern", "level": "expert" },
+          { "name": "Modular / Feature-Toggle Platforms", "level": "expert" },
+          { "name": "White-Label Multi-Tenant Systems", "level": "expert" },
+          { "name": "Offline-First Sync", "level": "expert" },
+          { "name": "Code Review Standards", "level": "expert" }
+        ]
+      },
+      {
+        "id": "security-compliance",
+        "title": "Security & Compliance",
+        "skills": [
+          { "name": "OAuth2", "level": "expert" },
+          { "name": "JWT", "level": "expert" },
+          { "name": "PCI-DSS", "level": "expert" },
+          { "name": "Biometric Auth", "level": "expert" },
+          { "name": "End-to-End Encryption", "level": "expert" },
+          { "name": "RBAC", "level": "expert" },
+          { "name": "Enterprise Security Hardening", "level": "expert" }
+        ]
+      },
+      {
+        "id": "devops-release",
+        "title": "DevOps & Release",
+        "skills": [
+          { "name": "GitHub Actions", "level": "expert" },
+          { "name": "Codemagic", "level": "expert" },
+          { "name": "App Store Deployment", "level": "expert" },
+          { "name": "Google Play Enterprise Deployment", "level": "expert" },
+          { "name": "Automated Testing", "level": "expert" },
+          { "name": "Code Signing", "level": "expert" }
+        ]
+      }
+    ]
+  },
+
+  "specialisms": [
+    {
+      "id": "mobile-architecture",
+      "title": "Mobile Architecture",
+      "icon": "architecture",
+      "description": "Designing scalable, maintainable mobile applications using Clean Architecture, MVVM, MVI, and Repository patterns across Flutter, native iOS (Swift/SwiftUI), and Android (Kotlin/Jetpack Compose). Deep experience building modular, feature-toggled, and white-label multi-tenant platforms serving multiple enterprise clients from a single codebase.",
+      "tags": ["clean arch", "MVVM", "MVI", "modular", "white-label", "feature-toggle", "repository pattern"]
+    },
+    {
+      "id": "iot-connected-devices",
+      "title": "IoT & Connected Devices",
+      "icon": "iot",
+      "description": "Bridging mobile with hardware through MQTT, BLE, NFC, and gRPC. Building custom native SDKs and Method Channel bridges to integrate smart locks, IP cameras, LPR systems, and precision measurement instruments — with direct experience on production IoT parking management platforms.",
+      "tags": ["MQTT", "BLE", "NFC", "method channels", "gRPC", "SDK development", "LPR", "smart locks"]
+    },
+    {
+      "id": "native-ios-android",
+      "title": "Native iOS & Android",
+      "icon": "platform",
+      "description": "Full native mobile development across both platforms: Swift, SwiftUI, UIKit, ARKit, and Combine on iOS; Kotlin, Java, Jetpack Compose, and Dagger on Android. Delivered production apps to 10M+ users at Syriatel, with deep expertise in security hardening, test automation (XCTest, Espresso), and AR experiences (ARKit/ARCore).",
+      "tags": ["Swift", "SwiftUI", "Kotlin", "Jetpack Compose", "ARKit", "ARCore", "UIKit", "Dagger"]
+    },
+    {
+      "id": "security-compliance",
+      "title": "Security & Compliance",
+      "icon": "security",
+      "description": "Implementing enterprise-grade mobile security across fintech, healthcare, and ERP platforms: OAuth2/JWT, RBAC, PCI-DSS-compliant encrypted storage, biometric auth, end-to-end encryption, iOS Keychain, Android Keystore, and ProGuard hardening. Remediated vulnerabilities from external penetration tests at Syriatel.",
+      "tags": ["OAuth2", "JWT", "PCI-DSS", "RBAC", "biometric", "E2E encryption", "iOS Keychain", "Android Keystore", "ProGuard"]
+    },
+    {
+      "id": "cross-platform-flutter",
+      "title": "Cross-Platform with Flutter",
+      "icon": "flutter",
+      "description": "Expert Flutter delivery across e-commerce, healthcare, fintech, and enterprise ERP domains. Deep expertise in BLoC, Clean Architecture, offline-first patterns, and AI-augmented development with GitHub Copilot and Claude Code. Delivered 5+ production apps and white-label platforms used by multiple enterprise tenants.",
+      "tags": ["Flutter", "Dart", "BLoC", "Riverpod", "offline-first", "AI-augmented", "white-label", "multi-tenant"]
+    },
+    {
+      "id": "ar-ml",
+      "title": "AR & ML Integration",
+      "icon": "ar",
+      "description": "Led POC and delivery of YOLO-based ML licence plate recognition and indoor mapping integration, accelerating R&D cycles by 30–40%. Delivered an ARCore/ARKit augmented reality heritage preservation app for UNDP's humanitarian programme.",
+      "tags": ["YOLO", "ML", "ARCore", "ARKit", "LPR", "indoor mapping", "POC", "R&D"]
+    },
+    {
+      "id": "team-leadership-cicd",
+      "title": "Team Leadership & CI/CD",
+      "icon": "leadership",
+      "description": "Building mobile departments from scratch — defining stacks, designing sprint structures, hiring, onboarding, and establishing code review culture. Setting up automated release pipelines with Codemagic and GitHub Actions, reducing release cycle times by up to 25% and accelerating multi-team delivery at scale.",
+      "tags": ["Codemagic", "GitHub Actions", "Agile/Scrum", "BOT model", "mentoring", "code review", "hiring", "team building"]
+    }
+  ],
+
+  "education": [
+    {
+      "id": "edu-1",
+      "degree": "Bachelor of Engineering – Telecommunications Engineering",
+      "institution": "Higher Institute for Applied Sciences and Technology",
+      "location": "Syria",
+      "period": "2011 – 2016"
+    }
+  ],
+
+  "certifications": [
+    {
+      "id": "cert-1",
+      "title": "IBM Full-Stack JavaScript Developer Professional Certificate",
+      "issuer": "IBM",
+      "status": "completed",
+      "url": "https://coursera.org/share/0d823351d10d2c0b63ffa3d0ef41107f"
+    },
+    {
+      "id": "cert-2",
+      "title": "Inspiring and Motivating Individuals",
+      "issuer": "University of Michigan",
+      "status": "completed",
+      "url": "https://coursera.org/share/b20a6610ae9b2c30044cbf86c871bc2c"
+    },
+    {
+      "id": "cert-3",
+      "title": "Generative AI for Mobile App Developers Professional Certificate",
+      "issuer": "IBM",
+      "status": "in_progress",
+      "url": "https://www.coursera.org/programs/syrian-youth-assembly-learning-program-blb40/specializations/generative-ai-for-mobile-app-developers"
+    }
+  ]
+}

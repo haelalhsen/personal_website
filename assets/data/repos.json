@@ -1,0 +1,50 @@
+[
+  {
+    "id": "anpr-scanner-flutter",
+    "name": "anpr_scanner_flutter",
+    "description": "A Flutter package for Automatic Number Plate Recognition (ANPR) using TFLite models. Runs a two-stage ML pipeline (detection + OCR) entirely on-device for real-time license plate scanning.",
+    "stars": 1200,
+    "language": "Dart",
+    "url": "https://github.com/haelalhsen/anpr_scanner_flutter"
+  },
+  {
+    "id": "evolute-printer-flutter",
+    "name": "evolute_printer_flutter",
+    "description": "A Flutter plugin for Evolute handheld devices with integrated thermal printer.",
+    "stars": 800,
+    "language": "Dart",
+    "url": "https://github.com/haelalhsen/evolute_printer_flutter"
+  },
+  {
+    "id": "flutter-getx-mvc-template",
+    "name": "flutter_getx_mvc_template",
+    "description": "ShowCase Flutter app using MVC architecture with Getx ecosystem.",
+    "stars": 620,
+    "language": "Dart",
+    "url": "https://github.com/haelalhsen/flutter_getx_mvc_template"
+  },
+  {
+    "id": "fullstack-capstone-project",
+    "name": "fullstack_capstone_project",
+    "description": "Full-Stack App ShowCase(MERN Stack) with Github Actions, Microservices.",
+    "stars": 410,
+    "language": "JavaScript",
+    "url": "https://github.com/haelalhsen/fullstack-capstone-project"
+  },
+  {
+    "id": "PostsApp",
+    "name": "flutter_offline_sync",
+    "description": "JSONPlaceholder Flutter app with Clean Architecture and Unit Testing",
+    "stars": 380,
+    "language": "Dart",
+    "url": "https://github.com/haelalhsen/PostsApp"
+  },
+  {
+    "id": "fluffychat",
+    "name": "fluffychat",
+    "description": "Contribution to The cutest instant messenger in the [matrix]",
+    "stars": 2700,
+    "language": "Dart",
+    "url": "https://github.com/krille-chan/fluffychat"
+  }
+]

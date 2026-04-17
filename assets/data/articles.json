@@ -1,0 +1,26 @@
+[
+  {
+    "id": "article-1",
+    "title": "Securing Flutter: A Deep Dive into OWASP Mobile Top 10 and Best Practices",
+    "excerpt": "In the current digital landscape, ensuring robust security measures in application development is critical. While Flutter is popular for multi-platform development, it is not immune to cyber threats. The inherent risks, such as data exposure and the potential for reverse engineering, demand a proactive approach to security.",
+    "url": "https://medium.com/@hael.alhsen/securing-flutter-a-deep-dive-into-owasp-mobile-top-10-and-best-practices-e03b2960e4f0",
+    "date": "2026-01-19",
+    "readTime": 6
+  },
+  {
+    "id": "article-2",
+    "title": "Have you heard about Microservices in Flutter!",
+    "excerpt": "In Flutter, “microservices” doesn’t mean running multiple servers on a mobile device. Instead, it refers to adopting a modular architecture where your application is broken down into independent, self-contained modules or packages — each responsible for a specific feature or domain.",
+    "url": "https://medium.com/@hael.alhsen/have-you-heard-about-microservices-in-flutter-13a829f708be",
+    "date": "2025-12-03",
+    "readTime": 4
+  },
+  {
+    "id": "article-3",
+    "title": "The Complete Guide to Popular Serverless Platforms in 2025",
+    "excerpt": "Serverless computing has revolutionised how developers build and deploy applications. By eliminating the need to manage infrastructure, serverless platforms let you focus on writing code while the platform handles scaling, maintenance, and operational complexity. But with multiple options available, how do you choose the right one?",
+    "url": "https://medium.com/PLACEHOLDER/flutter-performance-deep-dive",
+    "date": "2024-10-28",
+    "readTime": 4
+  }
+]

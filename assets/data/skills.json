@@ -1,0 +1,103 @@
+{
+  "categories": [
+    {
+      "title": "Native iOS",
+      "skills": [
+        { "name": "Swift", "level": "expert" },
+        { "name": "SwiftUI", "level": "expert" },
+        { "name": "UIKit", "level": "expert" },
+        { "name": "MVVM (iOS)", "level": "expert" },
+        { "name": "Combine", "level": "proficient" },
+        { "name": "ARKit", "level": "proficient" },
+        { "name": "XCTest", "level": "expert" },
+        { "name": "App Store Connect", "level": "expert" },
+        { "name": "iOS Keychain", "level": "expert" }
+      ]
+    },
+    {
+      "title": "Native Android",
+      "skills": [
+        { "name": "Kotlin", "level": "expert" },
+        { "name": "Java", "level": "proficient" },
+        { "name": "Jetpack Compose", "level": "expert" },
+        { "name": "MVVM (Android)", "level": "expert" },
+        { "name": "Dagger (DI)", "level": "proficient" },
+        { "name": "Espresso", "level": "expert" },
+        { "name": "Google Play Console", "level": "expert" },
+        { "name": "Android Keystore", "level": "expert" },
+        { "name": "ProGuard", "level": "proficient" }
+      ]
+    },
+    {
+      "title": "Cross-Platform",
+      "skills": [
+        { "name": "Flutter", "level": "expert" },
+        { "name": "Dart", "level": "expert" },
+        { "name": "BLoC", "level": "expert" },
+        { "name": "Riverpod", "level": "proficient" },
+        { "name": "GitHub Copilot", "level": "proficient" },
+        { "name": "Claude Code (AI-augmented dev)", "level": "proficient" }
+      ]
+    },
+    {
+      "title": "IoT & Connected Devices",
+      "skills": [
+        { "name": "MQTT", "level": "expert" },
+        { "name": "BLE", "level": "proficient" },
+        { "name": "NFC", "level": "proficient" },
+        { "name": "Smart Device Integration", "level": "expert" },
+        { "name": "Method Channel SDK Development", "level": "expert" },
+        { "name": "Hardware Bridging", "level": "expert" },
+        { "name": "gRPC", "level": "proficient" },
+        { "name": "REST", "level": "expert" }
+      ]
+    },
+    {
+      "title": "Architecture & Practices",
+      "skills": [
+        { "name": "Clean Architecture", "level": "expert" },
+        { "name": "MVVM", "level": "expert" },
+        { "name": "MVI", "level": "expert" },
+        { "name": "Repository Pattern", "level": "expert" },
+        { "name": "Modular / Feature-Toggle Platforms", "level": "expert" },
+        { "name": "White-Label Multi-Tenant Systems", "level": "expert" },
+        { "name": "Offline-First Sync", "level": "expert" },
+        { "name": "Code Review Standards", "level": "expert" }
+      ]
+    },
+    {
+      "title": "Security & Compliance",
+      "skills": [
+        { "name": "OAuth2", "level": "expert" },
+        { "name": "JWT", "level": "expert" },
+        { "name": "PCI-DSS", "level": "expert" },
+        { "name": "Biometric Auth", "level": "expert" },
+        { "name": "End-to-End Encryption", "level": "expert" },
+        { "name": "RBAC", "level": "expert" },
+        { "name": "Enterprise Security Hardening", "level": "expert" }
+      ]
+    },
+    {
+      "title": "DevOps & Release",
+      "skills": [
+        { "name": "GitHub Actions", "level": "expert" },
+        { "name": "Codemagic", "level": "expert" },
+        { "name": "App Store Deployment", "level": "expert" },
+        { "name": "Google Play Enterprise Deployment", "level": "expert" },
+        { "name": "Automated Testing", "level": "expert" },
+        { "name": "Code Signing", "level": "expert" }
+      ]
+    },
+    {
+      "title": "Engineering Leadership",
+      "skills": [
+        { "name": "Agile / Scrum Team Management", "level": "expert" },
+        { "name": "BOT Model Execution", "level": "expert" },
+        { "name": "Technical Decision-Making", "level": "expert" },
+        { "name": "Cross-Functional Team Leadership", "level": "expert" },
+        { "name": "Stakeholder Management", "level": "expert" },
+        { "name": "Hiring & Mentoring", "level": "expert" }
+      ]
+    }
+  ]
+}

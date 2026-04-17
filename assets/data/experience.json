@@ -1,0 +1,58 @@
+[
+  {
+    "id": "exp-1",
+    "role": "R&D Senior Mobile Engineer",
+    "company": "Omnitec Group",
+    "period": "Oct 2024 – Present",
+    "description": "Leading mobile R&D strategy for an IoT-connected parking management platform integrating smart locks, IP cameras, LPR systems, and MQTT-enabled sensors. Consolidated 5+ fragmented app variants into a single modular, feature-toggled platform, cutting code duplication by 60% and reducing new feature development time by 40%.",
+    "tags": ["IoT", "MQTT", "Flutter", "YOLO", "ML", "modular architecture", "feature-toggle", "R&D", "LPR", "team leadership"]
+  },
+  {
+    "id": "exp-2",
+    "role": "Mobile Applications Team Lead",
+    "company": "Accumed",
+    "period": "Jul 2023 – May 2024",
+    "description": "Established Accumed's mobile engineering department from zero: defined the technology stack (Flutter, Clean Architecture, BLoC), designed sprint structure, created code review standards, and implemented CI/CD pipelines via Codemagic. Led end-to-end hiring and onboarding of iOS, Android, and Flutter developers.",
+    "tags": ["Flutter", "BLoC", "clean architecture", "Codemagic", "CI/CD", "team building", "hiring", "healthcare", "BOT model", "agile"]
+  },
+  {
+    "id": "exp-3",
+    "role": "Senior Flutter Engineer – White-Label ERP",
+    "company": "ClefinCode",
+    "period": "Jul 2022 – Jul 2023",
+    "description": "Provided senior technical leadership for a white-label multi-tenant ERP platform serving multiple enterprise clients from a single codebase. Implemented OAuth2/JWT authentication, RBAC access control, PCI-DSS-compliant encrypted storage, and offline-first sync across 5 delivered modules.",
+    "tags": ["Flutter", "white-label", "multi-tenant", "ERP", "OAuth2", "JWT", "RBAC", "PCI-DSS", "offline-first", "modular architecture"]
+  },
+  {
+    "id": "exp-4",
+    "role": "Mobile Technical Officer",
+    "company": "UNDP Syria – Acceleration Lab",
+    "period": "Aug 2021 – Jan 2023",
+    "description": "Led technical delivery of two experimental mobile platforms for UNDP's humanitarian programme: an ARCore/ARKit augmented reality heritage preservation app and a biometrically-secured legal consultation platform with end-to-end encrypted communication and reusable native Swift/Kotlin SDKs.",
+    "tags": ["ARCore", "ARKit", "Swift", "Kotlin", "biometric auth", "E2E encryption", "method channels", "SDK development", "UNDP", "humanitarian"]
+  },
+  {
+    "id": "exp-5",
+    "role": "Flutter Team Leader",
+    "company": "Dream Web Development W.L.L",
+    "period": "Sep 2020 – Mar 2022",
+    "description": "Led a cross-functional mobile team delivering 5+ production applications for international clients across e-commerce, healthcare, and logistics. Established CI/CD with GitHub Actions, reducing release cycle time by 25%, and implemented Clean Architecture across all projects, reducing crash rates by ~15%.",
+    "tags": ["Flutter", "clean architecture", "GitHub Actions", "CI/CD", "agile", "App Store", "Google Play", "team leadership", "e-commerce", "healthcare", "logistics"]
+  },
+  {
+    "id": "exp-6",
+    "role": "Mobile Application Developer",
+    "company": "Syriatel Mobile Telecom",
+    "period": "Jan 2018 – Aug 2020",
+    "description": "Developed and maintained native iOS (Swift) and Android (Java) applications for Syria's largest telecommunications provider, architecting secure payment flows for a 10M+ user base. Built test automation frameworks (XCTest/Espresso) that reduced manual testing time by 30%.",
+    "tags": ["Swift", "Java", "Android", "iOS", "iOS Keychain", "Android Keystore", "ProGuard", "XCTest", "Espresso", "fintech", "security", "Oracle"]
+  },
+  {
+    "id": "exp-7",
+    "role": "Software Engineer – Instrumentation & Automation",
+    "company": "National Standards and Calibration Laboratory",
+    "period": "Jan 2017 – Dec 2017",
+    "description": "Engineered automation software interfacing directly with precision measurement instruments via hardware communication protocols — building foundational hardware-software integration expertise that underpins current IoT and connected-device engineering work.",
+    "tags": ["automation", "hardware protocols", "instrumentation", "IoT foundations"]
+  }
+]
