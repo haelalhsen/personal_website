@@ -30,22 +30,23 @@ class ContactSection extends StatelessWidget {
                 const SizedBox(height: AppSpacing.base),
                 const SectionTitle("Let's Build Something"),
                 const SizedBox(height: AppSpacing.xxl),
-                isDesktop
-                    ? const Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(child: TerminalCard()),
-                          SizedBox(width: AppSpacing.xxxl),
-                          Expanded(child: ContactForm()),
-                        ],
-                      )
-                    : const Column(
-                        children: [
-                          TerminalCard(),
-                          SizedBox(height: AppSpacing.xl),
-                          ContactForm(),
-                        ],
-                      ),
+                if (isDesktop)
+                  const Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(child: TerminalCard()),
+                      SizedBox(width: AppSpacing.xxxl),
+                      Expanded(child: ContactForm()),
+                    ],
+                  )
+                else
+                  const Column(
+                    children: [
+                      TerminalCard(),
+                      SizedBox(height: AppSpacing.xl),
+                      ContactForm(),
+                    ],
+                  ),
               ],
             ),
           ),

@@ -1,8 +1,11 @@
+import 'dart:js_interop';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:personal_intro/core/constants/app_assets.dart';
+import 'package:web/web.dart' as web;
 import '../../../core/constants/app_strings.dart';
 import '../../../core/responsive/breakpoints.dart';
 import '../../../core/theme/app_colors.dart';
@@ -11,10 +14,6 @@ import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../state/providers/nav_provider.dart';
 import 'mobile_drawer.dart';
-
-import 'package:web/web.dart' as web;
-import 'dart:js_interop';
-import 'package:flutter/services.dart';
 
 const _navScrolledThreshold = 80.0;
 const _navBlurSigma = 20.0;
@@ -78,7 +77,8 @@ class _NavContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isMobileOrTab = !Breakpoints.isDesktop(MediaQuery.sizeOf(context).width);
+    final isMobileOrTab =
+        !Breakpoints.isDesktop(MediaQuery.sizeOf(context).width);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xxxl),
@@ -196,11 +196,10 @@ class _DownloadCVButton extends StatefulWidget {
 class _DownloadCVButtonState extends State<_DownloadCVButton> {
   bool _hovered = false;
 
-
   Future<void> downloadFile(String assetPath, String fileName) async {
     // 1. Load the file bytes from assets
-    final ByteData data = await rootBundle.load(assetPath);
-    final Uint8List bytes = data.buffer.asUint8List();
+    final data = await rootBundle.load(assetPath);
+    final bytes = data.buffer.asUint8List();
 
     // 2. Create a Blob from the bytes
     // Note: we convert the Uint8List to a JS-compatible array
@@ -215,13 +214,11 @@ class _DownloadCVButtonState extends State<_DownloadCVButton> {
       ..download = fileName;
 
     web.document.body?.append(anchor);
-    anchor.click(); // This starts the browser download
-
-    // 5. Cleanup
-    anchor.remove();
+    anchor
+      ..click()
+      ..remove();
     web.URL.revokeObjectURL(url);
   }
-
 
   @override
   Widget build(BuildContext context) {

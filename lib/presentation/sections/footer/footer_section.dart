@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_strings.dart';
 import '../../../core/responsive/breakpoints.dart';
 import '../../../core/theme/app_colors.dart';
@@ -91,25 +90,6 @@ class _LogoBlock extends StatelessWidget {
   }
 }
 
-class _NavLinks extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Wrap(
-      spacing: AppSpacing.xl,
-      runSpacing: AppSpacing.sm,
-      children: AppStrings.navItems
-          .asMap()
-          .entries
-          .map(
-            (e) => GestureDetector(
-              onTap: () => context.go('/${AppStrings.navSections[e.key]}'),
-              child: Text(e.value, style: AppTypography.navLink()),
-            ),
-          )
-          .toList(),
-    );
-  }
-}
 
 class _BuiltWith extends StatelessWidget {
   @override
