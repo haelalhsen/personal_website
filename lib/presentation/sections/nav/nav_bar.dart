@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:personal_intro/core/constants/app_assets.dart';
 import '../../../core/constants/app_strings.dart';
 import '../../../core/responsive/breakpoints.dart';
 import '../../../core/theme/app_colors.dart';
@@ -10,6 +11,10 @@ import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../state/providers/nav_provider.dart';
 import 'mobile_drawer.dart';
+
+import 'package:web/web.dart' as web;
+import 'dart:js_interop';
+import 'package:flutter/services.dart';
 
 const _navScrolledThreshold = 80.0;
 const _navBlurSigma = 20.0;
@@ -191,26 +196,56 @@ class _DownloadCVButton extends StatefulWidget {
 class _DownloadCVButtonState extends State<_DownloadCVButton> {
   bool _hovered = false;
 
+
+  Future<void> downloadFile(String assetPath, String fileName) async {
+    // 1. Load the file bytes from assets
+    final ByteData data = await rootBundle.load(assetPath);
+    final Uint8List bytes = data.buffer.asUint8List();
+
+    // 2. Create a Blob from the bytes
+    // Note: we convert the Uint8List to a JS-compatible array
+    final blob = web.Blob([bytes.toJS].toJS);
+
+    // 3. Create an object URL for the Blob
+    final url = web.URL.createObjectURL(blob);
+
+    // 4. Create a hidden anchor element to trigger the download
+    final anchor = web.document.createElement('a') as web.HTMLAnchorElement
+      ..href = url
+      ..download = fileName;
+
+    web.document.body?.append(anchor);
+    anchor.click(); // This starts the browser download
+
+    // 5. Cleanup
+    anchor.remove();
+    web.URL.revokeObjectURL(url);
+  }
+
+
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      onEnter: (_) => setState(() => _hovered = true),
-      onExit: (_) => setState(() => _hovered = false),
-      child: AnimatedContainer(
-        duration: AppDurations.cardHover,
-        padding: const EdgeInsets.symmetric(
-          horizontal: AppSpacing.base,
-          vertical: AppSpacing.sm,
-        ),
-        decoration: BoxDecoration(
-          color: _hovered ? AppColors.accentPrimary : Colors.transparent,
-          borderRadius: BorderRadius.circular(AppSpacing.radiusButton),
-          border: Border.all(color: AppColors.accentPrimary),
-        ),
-        child: Text(
-          AppStrings.navDownloadCv,
-          style: AppTypography.navLink(
-            color: _hovered ? AppColors.bgPrimary : AppColors.accentPrimary,
+    return InkWell(
+      onTap: () => downloadFile(AppAssets.myCv, 'Hael_CV.pdf'),
+      child: MouseRegion(
+        onEnter: (_) => setState(() => _hovered = true),
+        onExit: (_) => setState(() => _hovered = false),
+        child: AnimatedContainer(
+          duration: AppDurations.cardHover,
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.base,
+            vertical: AppSpacing.sm,
+          ),
+          decoration: BoxDecoration(
+            color: _hovered ? AppColors.accentPrimary : Colors.transparent,
+            borderRadius: BorderRadius.circular(AppSpacing.radiusButton),
+            border: Border.all(color: AppColors.accentPrimary),
+          ),
+          child: Text(
+            AppStrings.navDownloadCv,
+            style: AppTypography.navLink(
+              color: _hovered ? AppColors.bgPrimary : AppColors.accentPrimary,
+            ),
           ),
         ),
       ),

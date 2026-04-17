@@ -24,6 +24,8 @@ class Project with _$Project {
     required List<String> tags,
     required List<ProjectMetric> metrics,
     required String mockupColor,
+    required String url,
+    @Default('') String image,
   }) = _Project;
 
   factory Project.fromJson(Map<String, dynamic> json) =>

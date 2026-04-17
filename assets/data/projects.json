@@ -11,7 +11,8 @@
       { "label": "Testing Reduction", "value": "30%" }
     ],
     "mockupColor": "#54C5F8",
-    "url": "https://www.syriatel.sy/products/akrab-elik"
+    "url": "https://www.syriatel.sy/products/akrab-elik",
+    "image": "assets/images/syriatel.png"
   },
   {
     "id": "iot-parking-platform",
@@ -25,7 +26,8 @@
       { "label": "App Variants Merged", "value": "5+" }
     ],
     "mockupColor": "#FF6E40",
-    "url": "https://apps.apple.com/ae/app/cass-parking/id1673358863"
+    "url": "https://apps.apple.com/ae/app/cass-parking/id1673358863",
+    "image": "assets/images/cass.png"
   },
   {
     "id": "white-label-erp",
@@ -39,6 +41,7 @@
       { "label": "Architecture", "value": "Multi-Tenant" }
     ],
     "mockupColor": "#0288D1",
-    "url": "https://apps.apple.com/us/app/erpnext-mobile/id6479046579"
+    "url": "https://apps.apple.com/us/app/erpnext-mobile/id6479046579",
+    "image": "assets/images/clefin.png"
   }
 ]

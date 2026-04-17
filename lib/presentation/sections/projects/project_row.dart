@@ -42,13 +42,11 @@ class _ProjectRowState extends State<ProjectRow> {
       child: AnimatedContainer(
         duration: AppDurations.cardHover,
         curve: Curves.easeOut,
-        padding: const EdgeInsets.all(AppSpacing.xl),
         decoration: BoxDecoration(
           color: AppColors.bgSurface,
           borderRadius: BorderRadius.circular(AppSpacing.radiusCard),
           border: Border.all(
-            color:
-                _hovered ? AppColors.accentPrimary : AppColors.borderSubtle,
+            color: _hovered ? AppColors.accentPrimary : AppColors.borderSubtle,
           ),
           boxShadow: _hovered
               ? [
@@ -94,36 +92,11 @@ class _ProjectMockup extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = Color(
-      int.parse(project.mockupColor.replaceFirst('#', 'FF'), radix: 16),
-    );
-
-    return AspectRatio(
-      aspectRatio: 4 / 3,
-      child: Container(
-        decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.08),
-          borderRadius: BorderRadius.circular(AppSpacing.radiusImage),
-          border: Border.all(color: color.withValues(alpha: 0.2)),
-        ),
-        child: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(
-                Icons.phone_android,
-                color: color.withValues(alpha: 0.4),
-                size: AppSpacing.iconXl,
-              ),
-              const SizedBox(height: AppSpacing.sm),
-              Text(
-                project.title,
-                style: AppTypography.caption(color: color.withValues(alpha: 0.6)),
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
-        ),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(AppSpacing.radiusImage),
+      child: Image.asset(
+        project.image,
+        fit: BoxFit.cover,
       ),
     );
   }
@@ -136,32 +109,39 @@ class _ProjectContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // Subtitle
-        Text(project.subtitle, style: AppTypography.mono()),
-        const SizedBox(height: AppSpacing.sm),
-        // Title
-        Text(project.title, style: AppTypography.sectionTitle()),
-        const SizedBox(height: AppSpacing.base),
-        // Description
-        Text(project.description, style: AppTypography.body()),
-        const SizedBox(height: AppSpacing.base),
-        // Tech tags
-        Wrap(
-          spacing: AppSpacing.xs,
-          runSpacing: AppSpacing.xs,
-          children: project.tags.map((t) => TechChip(t, small: true)).toList(),
-        ),
-        const SizedBox(height: AppSpacing.lg),
-        // Metrics row
-        Wrap(
-          spacing: AppSpacing.lg,
-          runSpacing: AppSpacing.sm,
-          children: project.metrics.map(_MetricBadge.new).toList(),
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        vertical: AppSpacing.xl,
+        horizontal: AppSpacing.md,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Subtitle
+          Text(project.subtitle, style: AppTypography.mono()),
+          const SizedBox(height: AppSpacing.sm),
+          // Title
+          Text(project.title, style: AppTypography.sectionTitle()),
+          const SizedBox(height: AppSpacing.base),
+          // Description
+          Text(project.description, style: AppTypography.body()),
+          const SizedBox(height: AppSpacing.base),
+          // Tech tags
+          Wrap(
+            spacing: AppSpacing.xs,
+            runSpacing: AppSpacing.xs,
+            children:
+                project.tags.map((t) => TechChip(t, small: true)).toList(),
+          ),
+          const SizedBox(height: AppSpacing.lg),
+          // Metrics row
+          Wrap(
+            spacing: AppSpacing.lg,
+            runSpacing: AppSpacing.sm,
+            children: project.metrics.map(_MetricBadge.new).toList(),
+          ),
+        ],
+      ),
     );
   }
 }

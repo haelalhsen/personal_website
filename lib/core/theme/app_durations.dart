@@ -10,6 +10,9 @@ abstract final class AppDurations {
   static const Duration scrollReveal = Duration(milliseconds: 500);
   static const Duration scrollAnimation = Duration(milliseconds: 600);
 
+  // Stats count-up
+  static const Duration countUp = Duration(milliseconds: 1200);
+
   // Terminal cursor blink
   static const Duration cursorBlink = Duration(milliseconds: 530);
 

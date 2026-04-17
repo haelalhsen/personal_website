@@ -16,8 +16,8 @@ import 'package:personal_intro/presentation/sections/projects/projects_section.d
 import 'package:personal_intro/presentation/sections/stats/stats_strip.dart';
 import 'package:personal_intro/presentation/sections/tech_stack/tech_stack_section.dart';
 import 'package:personal_intro/presentation/sections/testimonials/testimonials_section.dart';
+import 'package:personal_intro/presentation/shared/scroll_reveal.dart';
 import 'package:personal_intro/state/providers/nav_provider.dart';
-import 'package:personal_intro/state/scroll_controller_provider.dart';
 
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({super.key, this.section});
@@ -39,15 +39,29 @@ class _HomePageState extends ConsumerState<HomePage> {
   final _blogKey = GlobalKey();
   final _contactKey = GlobalKey();
 
+  final _scrollController = ScrollController();
+
   @override
   void initState() {
     super.initState();
+    _scrollController.addListener(_onScroll);
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      _setupScrollListener();
-      if (widget.section != null) {
-        _scrollToSection(widget.section!);
-      }
+      if (widget.section != null) _scrollToSection(widget.section!);
     });
+  }
+
+  void _onScroll() {
+    if (!_scrollController.hasClients) return;
+    final offset = _scrollController.offset;
+    ref.read(scrollOffsetProvider.notifier).state = offset;
+    _updateActiveNav(offset);
+  }
+
+  @override
+  void dispose() {
+    _scrollController.removeListener(_onScroll);
+    _scrollController.dispose();
+    super.dispose();
   }
 
   @override
@@ -58,14 +72,6 @@ class _HomePageState extends ConsumerState<HomePage> {
         _scrollToSection(widget.section!);
       });
     }
-  }
-
-  void _setupScrollListener() {
-    final controller = ref.read(scrollControllerProvider);
-    controller.addListener(() {
-      ref.read(scrollOffsetProvider.notifier).state = controller.offset;
-      _updateActiveNav(controller.offset);
-    });
   }
 
   // Keys in scroll order — used to auto-highlight the nav
@@ -114,14 +120,12 @@ class _HomePageState extends ConsumerState<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final scrollController = ref.watch(scrollControllerProvider);
-
     return Scaffold(
       backgroundColor: AppColors.bgPrimary,
       body: Stack(
         children: [
           SingleChildScrollView(
-            controller: scrollController,
+            controller: _scrollController,
             child: Column(
               children: [
                 const SizedBox(height: AppSpacing.navHeight),
@@ -130,43 +134,49 @@ class _HomePageState extends ConsumerState<HomePage> {
                 // Stats strip
                 const StatsStrip(),
                 // 02 — About
-                KeyedSubtree(key: _aboutKey, child: const AboutSection()),
+                KeyedSubtree(
+                  key: _aboutKey,
+                  child: const ScrollReveal(child: AboutSection()),
+                ),
                 // 03 — Experience
                 KeyedSubtree(
                   key: _experienceKey,
-                  child: const ExperienceSection(),
+                  child: const ScrollReveal(child: ExperienceSection()),
                 ),
                 // 04 — Expertise
                 KeyedSubtree(
                   key: _expertiseKey,
-                  child: const ExpertiseSection(),
+                  child: const ScrollReveal(child: ExpertiseSection()),
                 ),
                 // 04 — Projects
                 KeyedSubtree(
                   key: _projectsKey,
-                  child: const ProjectsSection(),
+                  child: const ScrollReveal(child: ProjectsSection()),
                 ),
                 // 05 — Open Source
                 KeyedSubtree(
                   key: _openSourceKey,
-                  child: const OpenSourceSection(),
+                  child: const ScrollReveal(child: OpenSourceSection()),
                 ),
                 // 06 — Tech Stack
                 KeyedSubtree(
                   key: _techStackKey,
-                  child: const TechStackSection(),
+                  child: const ScrollReveal(child: TechStackSection()),
                 ),
                 // 07 — Testimonials
                 KeyedSubtree(
                   key: _testimonialsKey,
-                  child: const TestimonialsSection(),
+                  child: const ScrollReveal(child: TestimonialsSection()),
                 ),
                 // 08 — Writing / Blog
-                KeyedSubtree(key: _blogKey, child: const BlogSection()),
+                KeyedSubtree(
+                  key: _blogKey,
+                  child: const ScrollReveal(child: BlogSection()),
+                ),
                 // 09 — Contact
                 KeyedSubtree(
                   key: _contactKey,
-                  child: const ContactSection(),
+                  child: const ScrollReveal(child: ContactSection()),
                 ),
                 const FooterSection(),
               ],

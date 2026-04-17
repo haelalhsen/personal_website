@@ -73,6 +73,9 @@ abstract final class AppSpacing {
   // Pulse / status indicators
   static const double pulseIndicator = 8;
 
+  // Stats strip vertical divider
+  static const double statsDividerHeight = 48;
+
   // Language indicator dot (open source cards)
   static const double languageDot = 10;
 

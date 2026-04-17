@@ -1,6 +1,6 @@
 # flutter pub run flutter_launcher_icons
 flutter_launcher_icons:
-  image_path: "assets/images/Hael-pic.png"
+  image_path: "assets/images/ic_fav.png"
 
   android: false
   # image_path_android: "assets/icon/icon.png"
@@ -20,7 +20,7 @@ flutter_launcher_icons:
 
   web:
     generate: true
-    image_path: "assets/images/Hael-pic.png"
+    image_path: "assets/images/ic_fav.png"
     background_color: "#hexcode"
     theme_color: "#hexcode"
 

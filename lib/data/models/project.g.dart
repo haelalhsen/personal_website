@@ -29,6 +29,8 @@ _$ProjectImpl _$$ProjectImplFromJson(Map<String, dynamic> json) =>
           .map((e) => ProjectMetric.fromJson(e as Map<String, dynamic>))
           .toList(),
       mockupColor: json['mockupColor'] as String,
+      url: json['url'] as String,
+      image: json['image'] as String? ?? '',
     );
 
 Map<String, dynamic> _$$ProjectImplToJson(_$ProjectImpl instance) =>
@@ -40,4 +42,6 @@ Map<String, dynamic> _$$ProjectImplToJson(_$ProjectImpl instance) =>
       'tags': instance.tags,
       'metrics': instance.metrics,
       'mockupColor': instance.mockupColor,
+      'url': instance.url,
+      'image': instance.image,
     };

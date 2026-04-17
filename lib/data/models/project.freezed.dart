@@ -194,6 +194,8 @@ mixin _$Project {
   List<String> get tags => throw _privateConstructorUsedError;
   List<ProjectMetric> get metrics => throw _privateConstructorUsedError;
   String get mockupColor => throw _privateConstructorUsedError;
+  String get url => throw _privateConstructorUsedError;
+  String get image => throw _privateConstructorUsedError;
 
   /// Serializes this Project to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -216,7 +218,9 @@ abstract class $ProjectCopyWith<$Res> {
       String description,
       List<String> tags,
       List<ProjectMetric> metrics,
-      String mockupColor});
+      String mockupColor,
+      String url,
+      String image});
 }
 
 /// @nodoc
@@ -241,6 +245,8 @@ class _$ProjectCopyWithImpl<$Res, $Val extends Project>
     Object? tags = null,
     Object? metrics = null,
     Object? mockupColor = null,
+    Object? url = null,
+    Object? image = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -271,6 +277,14 @@ class _$ProjectCopyWithImpl<$Res, $Val extends Project>
           ? _value.mockupColor
           : mockupColor // ignore: cast_nullable_to_non_nullable
               as String,
+      url: null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -289,7 +303,9 @@ abstract class _$$ProjectImplCopyWith<$Res> implements $ProjectCopyWith<$Res> {
       String description,
       List<String> tags,
       List<ProjectMetric> metrics,
-      String mockupColor});
+      String mockupColor,
+      String url,
+      String image});
 }
 
 /// @nodoc
@@ -312,6 +328,8 @@ class __$$ProjectImplCopyWithImpl<$Res>
     Object? tags = null,
     Object? metrics = null,
     Object? mockupColor = null,
+    Object? url = null,
+    Object? image = null,
   }) {
     return _then(_$ProjectImpl(
       id: null == id
@@ -342,6 +360,14 @@ class __$$ProjectImplCopyWithImpl<$Res>
           ? _value.mockupColor
           : mockupColor // ignore: cast_nullable_to_non_nullable
               as String,
+      url: null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -356,7 +382,9 @@ class _$ProjectImpl implements _Project {
       required this.description,
       required final List<String> tags,
       required final List<ProjectMetric> metrics,
-      required this.mockupColor})
+      required this.mockupColor,
+      required this.url,
+      this.image = ''})
       : _tags = tags,
         _metrics = metrics;
 
@@ -389,10 +417,15 @@ class _$ProjectImpl implements _Project {
 
   @override
   final String mockupColor;
+  @override
+  final String url;
+  @override
+  @JsonKey()
+  final String image;
 
   @override
   String toString() {
-    return 'Project(id: $id, title: $title, subtitle: $subtitle, description: $description, tags: $tags, metrics: $metrics, mockupColor: $mockupColor)';
+    return 'Project(id: $id, title: $title, subtitle: $subtitle, description: $description, tags: $tags, metrics: $metrics, mockupColor: $mockupColor, url: $url, image: $image)';
   }
 
   @override
@@ -409,7 +442,9 @@ class _$ProjectImpl implements _Project {
             const DeepCollectionEquality().equals(other._tags, _tags) &&
             const DeepCollectionEquality().equals(other._metrics, _metrics) &&
             (identical(other.mockupColor, mockupColor) ||
-                other.mockupColor == mockupColor));
+                other.mockupColor == mockupColor) &&
+            (identical(other.url, url) || other.url == url) &&
+            (identical(other.image, image) || other.image == image));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -422,7 +457,9 @@ class _$ProjectImpl implements _Project {
       description,
       const DeepCollectionEquality().hash(_tags),
       const DeepCollectionEquality().hash(_metrics),
-      mockupColor);
+      mockupColor,
+      url,
+      image);
 
   /// Create a copy of Project
   /// with the given fields replaced by the non-null parameter values.
@@ -448,7 +485,9 @@ abstract class _Project implements Project {
       required final String description,
       required final List<String> tags,
       required final List<ProjectMetric> metrics,
-      required final String mockupColor}) = _$ProjectImpl;
+      required final String mockupColor,
+      required final String url,
+      final String image}) = _$ProjectImpl;
 
   factory _Project.fromJson(Map<String, dynamic> json) = _$ProjectImpl.fromJson;
 
@@ -466,6 +505,10 @@ abstract class _Project implements Project {
   List<ProjectMetric> get metrics;
   @override
   String get mockupColor;
+  @override
+  String get url;
+  @override
+  String get image;
 
   /// Create a copy of Project
   /// with the given fields replaced by the non-null parameter values.

@@ -12,6 +12,11 @@ abstract final class AppAssets {
 
   // ── Images ────────────────────────────────────────────────────────────────
   static const String profileImage = 'assets/images/Hael-pic.png';
+  static const String myCv = 'assets/Hael_Alhsen_CV_SrMobileEng.pdf';
+
+  static const String projectSyriatel = 'assets/images/syriatel.png';
+  static const String projectCass = 'assets/images/cass.png';
+  static const String projectClefin = 'assets/images/clefin.png';
 
   static const String heroImage = 'https://images.unsplash.com/photo-1658953229625-aad99d7603b4?crop=entropy&cs=tinysrgb&fit=max&fm='
       'jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbW9ja3VwJTIwZ'
